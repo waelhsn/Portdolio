@@ -1,91 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wael's Resume - Coming Soon</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #4e54c8, #8f94fb);
-            color: #ffffff;
-        }
-
-        .container {
-            text-align: center;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            letter-spacing: 1.5px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: #f0f0f0;
-        }
-
-        .loader {
-            width: 60px;
-            height: 60px;
-            border: 6px solid rgba(255, 255, 255, 0.3);
-            border-top: 6px solid #ffffff;
-            border-radius: 50%;
-            margin: 20px auto;
-            animation: spin 1s linear infinite;
-        }
-
-        .contact {
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-
-        .contact a {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>My CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Wael's Resume</h1>
-        <p>Our website is currently under construction. Stay tuned for updates!</p>
-        <div class="loader"></div>
-        <div class="contact">
-            <p>For inquiries, reach out at <a href="mailto:wael.hsn@outlook.com">wael.hsn@outlook.com</a>.</p>
-        </div>
-    </div>
+    <header>
+        <h1>Wael Hasan</h1>
+        <p>Software Engineer</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A brief description about yourself, your background, skills, and interests.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Job Title 1</strong> - Company Name (Year-Year)</li>
+                <li><strong>Job Title 2</strong> - Company Name (Year-Year)</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Degree</strong> - University Name (Year-Year)</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
