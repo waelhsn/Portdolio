@@ -3,45 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wael's Resume - Under Construction</title>
+    <title>Wael's Resume - Coming Soon</title>
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #ffffff;
+        }
+
+        .container {
             text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
         }
+
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
         }
+
         p {
             font-size: 1.2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 20px;
+            color: #f0f0f0;
         }
+
         .loader {
-            border: 6px solid #f4f4f4;
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            border-top: 6px solid #ffffff;
             border-radius: 50%;
-            border-top: 6px solid #333;
-            width: 50px;
-            height: 50px;
+            margin: 20px auto;
             animation: spin 1s linear infinite;
         }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Wael's Resume</h1>
-    <p>We're working hard to bring this page to life. Stay tuned!</p>
-    <div class="loader"></div>
+    <div class="container">
+        <h1>Wael's Resume</h1>
+        <p>Our website is currently under construction. Stay tuned for updates!</p>
+        <div class="loader"></div>
+        <div class="contact">
+            <p>For inquiries, reach out at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        </div>
+    </div>
 </body>
 </html>
