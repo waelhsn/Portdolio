@@ -4,15 +4,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
-    background-color: #1e1e1e; /* Dark terminal background */
+    background-color: black; /* Dark terminal background */
     color: #d4d4d4; /* Light gray text */
     overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
-    color: #0b110b; /* Bright green text */
+    background: linear-gradient(1848deg, black, rgb(19, 16, 16));
+    color: black; /* Bright green text */
     text-align: center;
     padding: 2.5em 1em;
     border-bottom: 3px solid #d4d4d4;
@@ -27,7 +27,7 @@ header .profile-image img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px  black;
     border: 3px solid #d4d4d4; /* Green border for the image */
 }
 
@@ -62,9 +62,9 @@ section {
     margin: 20px auto;
     padding: 30px;
     max-width: 900px;
-    background: #2d2d2d; /* Terminal panel background */
+    background: black; /* Terminal panel background */
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 15px rgba(223, 219, 219, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -78,7 +78,7 @@ section h3 {
     margin-bottom: 15px;
     border-bottom: 3px solid #afaaaa;
     padding-bottom: 8px;
-    color: #0e110e; /* Bright green */
+    color: white; /* Bright green */
 }
 
 /* List Styling */
@@ -116,7 +116,7 @@ form {
 form input, form textarea, form button {
     padding: 15px;
     font-size: 1.1em;
-    border: 1px solid #3c3c3c;
+    border: 1px solid green;
     border-radius: 8px;
     background: #1e1e1e;
     color: #d4d4d4;
@@ -132,7 +132,7 @@ form input:focus, form textarea:focus {
 
 form button {
     background: #d4d4d4;
-    color: #1e1e1e;
+    color: black;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -148,7 +148,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #2d2d2d;
+    background: black;
     color: #d4d4d4;
     font-size: 0.9em;
     margin-top: 30px;
@@ -160,8 +160,8 @@ footer {
     cursor: alias;
     font-family: 'Courier New', Courier, monospace;
     color: #d4d4d4;
-    background: #1e1e1e;
+    background: black;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #3c3c3c;
+    border: 1px solid black;
 }
