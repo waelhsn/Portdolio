@@ -1,21 +1,21 @@
 /* General Reset */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     line-height: 1.8;
-    background-color: #f9f9fb;
-    color: #333;
+    background-color: #0d1117; /* Dark terminal background */
+    color: #c9d1d9; /* Light gray text */
     overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(135deg, #0066cc, #004d99);
-    color: #fff;
+    background: linear-gradient(135deg, #161b22, #0d1117);
+    color: #58a6ff; /* Bright blue text */
     text-align: center;
     padding: 2.5em 1em;
-    border-bottom: 5px solid #004d99;
+    border-bottom: 3px solid #1f6feb;
 }
 
 header .profile-image {
@@ -27,27 +27,29 @@ header .profile-image img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 3px solid #1f6feb; /* Blue border for the image */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #58a6ff; /* Terminal blue */
 }
 
 header h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: 0.8em 0;
     font-weight: 300;
-    color: #e0f2ff;
+    color: #8b949e; /* Subdued gray */
 }
 
 header p {
     font-size: 1em;
     margin: 0.5em 0 0;
     font-weight: 400;
+    color: #c9d1d9;
 }
 
 /* Main Styling */
@@ -60,23 +62,23 @@ section {
     margin: 20px auto;
     padding: 30px;
     max-width: 900px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background: #161b22; /* Terminal panel background */
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
 section h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    border-bottom: 3px solid #0066cc;
+    border-bottom: 3px solid #1f6feb;
     padding-bottom: 8px;
-    color: #0066cc;
+    color: #58a6ff; /* Bright blue */
 }
 
 /* List Styling */
@@ -89,19 +91,19 @@ ul li {
     margin: 12px 0;
     padding-left: 0;
     font-size: 1.1em;
-    color: #555;
+    color: #c9d1d9;
 }
 
 /* Links */
 a {
-    color: #0066cc;
+    color: #58a6ff; /* Bright blue */
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #004d99;
+    color: #79c0ff;
 }
 
 /* Contact Form */
@@ -114,37 +116,52 @@ form {
 form input, form textarea, form button {
     padding: 15px;
     font-size: 1.1em;
-    border: 1px solid #ddd;
+    border: 1px solid #30363d;
     border-radius: 8px;
-    background: #f7f9fc;
+    background: #0d1117;
+    color: #c9d1d9;
     outline: none;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #0066cc;
-    background: #eef7ff;
+    border-color: #58a6ff;
+    background: #161b22;
 }
 
 form button {
-    background: #0066cc;
+    background: #1f6feb;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 form button:hover {
-    background: #004d99;
+    background: #238636;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #0066cc;
-    color: #fff;
+    background: #161b22;
+    color: #c9d1d9;
     font-size: 0.9em;
     margin-top: 30px;
+}
+
+/* Code-like Summary Styling */
+#summary {
+    font-size: 1em;
+    cursor: alias;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c9d1d9;
+    background: #0d1117;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
 }
