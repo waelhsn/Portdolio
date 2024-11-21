@@ -4,18 +4,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
-    background-color: #0d1117; /* Dark terminal background */
-    color: #c9d1d9; /* Light gray text */
+    background-color: #1e1e1e; /* Dark terminal background */
+    color: #d4d4d4; /* Light gray text */
     overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(135deg, #161b22, #0d1117);
-    color: #58a6ff; /* Bright blue text */
+    background: linear-gradient(135deg, #2d2d2d, #1e1e1e);
+    color: #0b110b; /* Bright green text */
     text-align: center;
     padding: 2.5em 1em;
-    border-bottom: 3px solid #1f6feb;
+    border-bottom: 3px solid #d4d4d4;
 }
 
 header .profile-image {
@@ -28,28 +28,28 @@ header .profile-image img {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 3px solid #1f6feb; /* Blue border for the image */
+    border: 3px solid #d4d4d4; /* Green border for the image */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
-    color: #58a6ff; /* Terminal blue */
+    color: #d4d4d4; /* Terminal green */
 }
 
 header h2 {
     font-size: 1.3em;
     margin: 0.8em 0;
     font-weight: 300;
-    color: #8b949e; /* Subdued gray */
+    color: #d4d4d4; /* Subdued gray */
 }
 
 header p {
     font-size: 1em;
     margin: 0.5em 0 0;
     font-weight: 400;
-    color: #c9d1d9;
+    color: #d4d4d4;
 }
 
 /* Main Styling */
@@ -62,7 +62,7 @@ section {
     margin: 20px auto;
     padding: 30px;
     max-width: 900px;
-    background: #161b22; /* Terminal panel background */
+    background: #2d2d2d; /* Terminal panel background */
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -76,9 +76,9 @@ section:hover {
 section h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    border-bottom: 3px solid #1f6feb;
+    border-bottom: 3px solid #afaaaa;
     padding-bottom: 8px;
-    color: #58a6ff; /* Bright blue */
+    color: #0e110e; /* Bright green */
 }
 
 /* List Styling */
@@ -91,19 +91,19 @@ ul li {
     margin: 12px 0;
     padding-left: 0;
     font-size: 1.1em;
-    color: #c9d1d9;
+    color: #d4d4d4;
 }
 
 /* Links */
 a {
-    color: #58a6ff; /* Bright blue */
+    color: #d4d4d4; /* Bright green */
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #79c0ff;
+    color: #d4d4d4;
 }
 
 /* Contact Form */
@@ -116,23 +116,23 @@ form {
 form input, form textarea, form button {
     padding: 15px;
     font-size: 1.1em;
-    border: 1px solid #30363d;
+    border: 1px solid #3c3c3c;
     border-radius: 8px;
-    background: #0d1117;
-    color: #c9d1d9;
+    background: #1e1e1e;
+    color: #d4d4d4;
     outline: none;
     transition: border-color 0.3s ease, background-color 0.3s ease;
     font-family: 'Courier New', Courier, monospace;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #58a6ff;
-    background: #161b22;
+    border-color: #d4d4d4;
+    background: #2d2d2d;
 }
 
 form button {
-    background: #1f6feb;
-    color: #fff;
+    background: #d4d4d4;
+    color: #1e1e1e;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -141,15 +141,15 @@ form button {
 }
 
 form button:hover {
-    background: #238636;
+    background: #585e58;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #161b22;
-    color: #c9d1d9;
+    background: #2d2d2d;
+    color: #d4d4d4;
     font-size: 0.9em;
     margin-top: 30px;
 }
@@ -159,9 +159,9 @@ footer {
     font-size: 1em;
     cursor: alias;
     font-family: 'Courier New', Courier, monospace;
-    color: #c9d1d9;
-    background: #0d1117;
+    color: #d4d4d4;
+    background: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #30363d;
+    border: 1px solid #3c3c3c;
 }
