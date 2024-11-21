@@ -1,4 +1,15 @@
 // Initialize EmailJS
+const prependDollarSign = (selector) => {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => {
+        element.textContent = `$ ${element.textContent.trim()}`;
+    });
+};
+
+// Apply to both <h3> and <p> elements
+prependDollarSign('h3');
+prependDollarSign('li');
+    
 (function() {
     emailjs.init('FLtAw4eSXjYUo51wN'); // Replace with your EmailJS user ID
 })();
