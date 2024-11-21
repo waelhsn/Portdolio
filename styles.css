@@ -4,18 +4,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
-    background-color: black; /* Dark terminal background */
+    background-color: #1e1e1e; /* Dark gray terminal background */
     color: #d4d4d4; /* Light gray text */
     overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(1848deg, black, rgb(19, 16, 16));
-    color: black; /* Bright green text */
+    background: linear-gradient(1848deg, #1e1e1e, #121212);
+    color: #00ff00; /* Bright green text */
     text-align: center;
     padding: 2.5em 1em;
-    border-bottom: 3px solid #d4d4d4;
+    border-bottom: 2px solid #00ff00; /* Green underline */
 }
 
 header .profile-image {
@@ -27,15 +27,15 @@ header .profile-image img {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px  black;
-    border: 3px solid #d4d4d4; /* Green border for the image */
+    box-shadow: 0 4px 8px black;
+    border: 3px solid #00ff00; /* Green border for the image */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     font-weight: bold;
-    color: #d4d4d4; /* Terminal green */
+    color: #00ff00; /* Terminal green */
 }
 
 header h2 {
@@ -62,23 +62,24 @@ section {
     margin: 20px auto;
     padding: 30px;
     max-width: 900px;
-    background: black; /* Terminal panel background */
+    background: #121212; /* Terminal panel background */
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(223, 219, 219, 0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #00ff00; /* Subtle green border */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
 }
 
 section h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    border-bottom: 3px solid #afaaaa;
+    border-bottom: 3px solid #00ff00;
     padding-bottom: 8px;
-    color: white; /* Bright green */
+    color: #00ff00; /* Bright green */
 }
 
 /* List Styling */
@@ -96,14 +97,14 @@ ul li {
 
 /* Links */
 a {
-    color: #d4d4d4; /* Bright green */
+    color: #00ff00; /* Bright green */
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #d4d4d4;
+    color: #00ff00;
 }
 
 /* Contact Form */
@@ -116,7 +117,7 @@ form {
 form input, form textarea, form button {
     padding: 15px;
     font-size: 1.1em;
-    border: 1px solid green;
+    border: 1px solid #00ff00;
     border-radius: 8px;
     background: #1e1e1e;
     color: #d4d4d4;
@@ -126,12 +127,12 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: #d4d4d4;
+    border-color: #00ff00;
     background: #2d2d2d;
 }
 
 form button {
-    background: #d4d4d4;
+    background: #00ff00;
     color: black;
     font-weight: bold;
     cursor: pointer;
@@ -141,14 +142,14 @@ form button {
 }
 
 form button:hover {
-    background: #585e58;
+    background: #33cc33;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: black;
+    background: #1e1e1e;
     color: #d4d4d4;
     font-size: 0.9em;
     margin-top: 30px;
@@ -157,11 +158,10 @@ footer {
 /* Code-like Summary Styling */
 #summary {
     font-size: 1em;
-    cursor: alias;
     font-family: 'Ubuntu Mono', monospace;
     color: #d4d4d4;
-    background: black;
+    background: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid #00ff00;
 }
