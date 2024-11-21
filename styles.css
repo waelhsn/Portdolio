@@ -18,6 +18,18 @@ header {
     border-bottom: 5px solid #004d99;
 }
 
+header .profile-image {
+    margin-bottom: 1em;
+}
+
+header .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 header h1 {
     margin: 0;
     font-size: 2.8em;
@@ -36,6 +48,11 @@ header p {
     font-size: 1em;
     margin: 0.5em 0 0;
     font-weight: 400;
+}
+
+/* Main Styling */
+main {
+    padding: 20px;
 }
 
 /* Section Styling */
