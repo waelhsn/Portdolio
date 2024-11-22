@@ -82,6 +82,13 @@ section h3 {
     color: #00ff00; /* Bright green */
 }
 
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #08666d; /* Bright green */
+}
+
+
 /* List Styling */
 ul {
     list-style: none;
